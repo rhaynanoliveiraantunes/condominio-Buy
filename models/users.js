@@ -19,18 +19,15 @@ const UserSchema = new mongoose.Schema(
       required: true,
       select: false,
     },
-    telefone: {
+    apartamento: {
       type: String,
+      required: true,
       trim: true,
     },
     role: {
       type: String,
       enum: ["user", "admin"],
       default: "user",
-    },
-    ativo: {
-      type: Boolean,
-      default: true,
     },
   },
   {
